@@ -2,15 +2,16 @@ name: CI Pipeline
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-steps:
-      - name: Checkout code343 
+
+    steps:
+      - name: Checkout code343
         uses: actions/checkout@v4
 
       - name: Setup Node.js
